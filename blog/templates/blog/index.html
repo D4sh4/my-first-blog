@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sewerlvls</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <img class="logo" src="{% static 'img/лого.png' %}" alt="">
+    <nav>
+        <ul class="nav">
+        <li>+ 7 (999) 999-99-99</li>
+        <li>ул. Азовская, 8, Москва, 117149</li>
+        </ul>
+    </nav>
+    <ul class="ink"> 
+        <li> 
+            <a href="#">
+             <img src="{% static 'img/вк.png' %}" alt="">
+            </a>
+    </li>
+     <li> 
+            <a href="#">
+             <img src="{% static 'img/инст.png' %}" alt="">
+            </a>
+    </li>
+     <li> 
+            <a href="#">
+             <img src="{% static 'img/ютуб.png' %}" alt="">
+            </a>
+    </li>
+     <li> 
+            <a href="#">
+             <img src="{% static 'img/тви.png' %}" alt="">
+            </a>
+    </li>
+    </ul>
+    </header>
+    <main>
+        <section class="opisanie">
+            <img src="{% static 'img/пластинка.png' %}" alt=""> 
+            <p>Sewerlvls  — студия звукозаписи, занимается записей<br> актёром озвучки, текстов песен и съёмкой видео, а также<br> арендой своих студий для компаний.<br>
+Основными клиентами студии являются актёры озвучки<br> и начинающие музыканты, <br>
+которым нужно место для записи своих аудио, что <br>студия им предоставляет. <br>
+Довольно удобные комнатки для записи нужного для <br>клиентов материала, приятный<br>
+рабочий коллектив студии, что поможет с любыми <br>просьбами и вопросами клиентам, <br>
+красивые студии с умиротворяющей атмосферой и <br>многое другое!</p>
+        </section>
+        <section class="yslugi">
+            <h1>Наши Услуги</h1>
+            <div class="ysl">
+                <img src="{% static 'img/ящерица.png' %}">
+                <div class="l"><h2>Запись вокала</h2><p>На нашей студии звукозаписи вы можете записать вокал или<br> 
+дикторский голос с профессиональными звукорежиссёрами <br>
+на качественном оборудовании. В нашем арсенале парк микрофонов<br>
+от известных брендов, высококачественные предусилители и <br> 
+приборы аналоговой и цифровой обработки.<br></p></div>
+            </div>
+            <div class="ysl">
+                <img src="{% static 'img/лягуха.png' %}">
+                <div class="l"><h2>Песня под ключ</h2><p>На нашей студии работают талантливые звукорежиссёры, <br>
+текстовики, композиторы и аранжировщики, готовые реализовать <br>
+ваши самые смелые идеи для записи песни под ключ в любых жанрах и<br> 
+стилях. Если у вас уже есть текст и вокальная мелодия, то мы <br>
+можем помочь вам с написанием крутой, стильной аранжировки на<br> 
+вашу задумку.<br></p></div>
+            </div>
+            <div class="ysl">
+                <img src="{% static 'img/собака.png' %}">
+                <div class="l"><h2>Аранжировка на заказ</h2><p>Музыкальная аранжировка в студии Sewerlvls - <br>
+профессиональная проработка всех элементов будущей композиции, <br>
+определение стилистики и жанра, подбор партий музыкальных <br>
+инструментов, последующая запись и обработка вокала.<br></p></div>
+            </div>
+        </section>
+        <section><img src="{% static 'img/glhf.png' %}" alt=""></section>
+    </main>
+    <footer>
+         <ul class="ban">
+        <li>+ 7 (999) 999-99-99,  с 7 утра до 8 вечера</li>
+        <li class="email">Sewerlvls@gmail.com</li>
+        <li class="text"><a href="{% url 'crm' %}">Отзывы</a></li>
+        </ul>
+    </footer>
+</body> 
+</html> 
